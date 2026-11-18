@@ -1,0 +1,1012 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#003399">
+  <meta name="description" content="Explore plumbing repairs, leak detection, drainage, installations and emergency plumbing services in Dubai. Contact Plumbing Dubai to discuss your requirements.">
+  <title>Plumbing Dubai | Professional Plumbing Services</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --yellow: #FABB07;
+      --yellow-dark: #D99A00;
+      --yellow-soft: #FFF7DB;
+      --blue: #003399;
+      --blue-dark: #00246E;
+      --blue-deep: #071B3D;
+      --aqua: #16A6A1;
+      --body: #444444;
+      --muted: #667085;
+      --white: #FFFFFF;
+      --light: #F5F7FB;
+      --border: #DCE3EE;
+      --heading-font: "Barlow Condensed", sans-serif;
+      --body-font: "DM Sans", sans-serif;
+      --container: 1180px;
+      --radius: 18px;
+      --shadow: 0 18px 50px rgba(7, 27, 61, .10);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      margin: 0;
+      font-family: var(--body-font);
+      color: var(--body);
+      background: var(--white);
+      line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    img { display: block; max-width: 100%; }
+    .container { width: min(var(--container), calc(100% - 40px)); margin: auto; }
+    .section { padding: 96px 0; }
+    .section-light { background: var(--light); }
+    .section-yellow { background: var(--yellow-soft); }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 27px;
+      height: 3px;
+      background: var(--yellow);
+      border-radius: 10px;
+    }
+    h1, h2, h3, h4 {
+      margin: 0;
+      color: var(--blue-deep);
+      font-family: var(--heading-font);
+      line-height: .98;
+      letter-spacing: -.015em;
+      text-transform: uppercase;
+    }
+    h1 { font-size: clamp(3.4rem, 7vw, 5.4rem); }
+    h2 { font-size: clamp(2.8rem, 5vw, 4.2rem); }
+    h3 { font-size: 2rem; }
+    p { margin: 0 0 18px; }
+    .section-heading { max-width: 720px; margin-bottom: 42px; }
+    .section-heading h2 { margin: 16px 0; }
+    .section-heading p { max-width: 650px; color: var(--muted); }
+    .btn {
+      min-height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 23px;
+      border: 2px solid transparent;
+      border-radius: 7px;
+      font-weight: 700;
+      transition: .25s ease;
+      cursor: pointer;
+    }
+    .btn-primary { background: var(--blue); color: var(--white); }
+    .btn-primary:hover { background: var(--blue-dark); transform: translateY(-2px); }
+    .btn-yellow { background: var(--yellow); color: var(--blue-deep); }
+    .btn-yellow:hover { background: #FFD34F; transform: translateY(-2px); }
+    .btn-outline { color: var(--white); border-color: rgba(255,255,255,.55); }
+    .btn-outline:hover { background: var(--white); color: var(--blue); }
+    .btn svg { width: 18px; height: 18px; }
+
+    /* Header */
+    .topbar { background: var(--blue-deep); color: #fff; font-size: 13px; }
+    .topbar-inner {
+      min-height: 38px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+    .topbar a { color: #fff; }
+    .topbar-contact { display: flex; gap: 22px; flex-wrap: wrap; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(220,227,238,.8);
+    }
+    .nav-inner {
+      min-height: 82px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 28px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--blue);
+      font-weight: 800;
+      line-height: 1;
+    }
+    .brand-mark {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      background: var(--yellow);
+      border-radius: 10px 10px 10px 2px;
+    }
+    .brand-mark svg { width: 28px; height: 28px; }
+    .brand-name { display: block; font-size: 19px; letter-spacing: -.04em; }
+    .brand-sub { display: block; margin-top: 5px; color: var(--muted); font-size: 9px; letter-spacing: .17em; }
+    .nav-links { display: flex; align-items: center; gap: 27px; }
+    .nav-links a { color: var(--blue-deep); font-size: 14px; font-weight: 700; }
+    .nav-links a:hover { color: var(--yellow-dark); }
+    .nav-actions { display: flex; align-items: center; gap: 10px; }
+    .nav-actions .btn { min-height: 46px; padding: 10px 17px; font-size: 13px; }
+    .menu-toggle {
+      display: none;
+      width: 45px;
+      height: 45px;
+      border: 1px solid var(--border);
+      background: white;
+      border-radius: 7px;
+      color: var(--blue);
+      font-size: 23px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 680px;
+      display: flex;
+      align-items: center;
+      color: white;
+      background: var(--blue-deep);
+      isolation: isolate;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(90deg, rgba(4,19,48,.96) 0%, rgba(4,30,75,.88) 48%, rgba(4,30,75,.32) 100%),
+        url("https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=2000&q=85") center/cover no-repeat;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 520px;
+      height: 520px;
+      right: -180px;
+      bottom: -260px;
+      border: 1px solid rgba(250,187,7,.45);
+      border-radius: 50%;
+      box-shadow: 0 0 0 45px rgba(250,187,7,.05), 0 0 0 90px rgba(250,187,7,.04);
+    }
+    .hero-content { max-width: 760px; padding: 100px 0; }
+    .hero .eyebrow { color: var(--yellow); }
+    .hero h1 { max-width: 750px; margin: 22px 0; color: white; }
+    .hero h1 span { color: var(--yellow); }
+    .hero-copy { max-width: 610px; color: rgba(255,255,255,.82); font-size: 18px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 32px; }
+    .hero-note {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 38px;
+      color: rgba(255,255,255,.78);
+      font-size: 13px;
+    }
+    .hero-note-mark {
+      width: 34px; height: 34px; display: grid; place-items: center;
+      border: 1px solid rgba(250,187,7,.6); border-radius: 50%; color: var(--yellow);
+    }
+
+    /* Quick trust strip */
+    .trust-strip { background: var(--yellow); color: var(--blue-deep); }
+    .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .trust-item {
+      min-height: 104px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+      padding: 18px;
+      border-right: 1px solid rgba(7,27,61,.15);
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .trust-item:last-child { border: 0; }
+    .trust-item svg { width: 25px; height: 25px; flex: 0 0 auto; }
+
+    /* Intro */
+    .intro-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: 75px; align-items: center; }
+    .intro-visual { position: relative; min-height: 460px; }
+    .intro-photo {
+      position: absolute;
+      inset: 0 55px 35px 0;
+      border-radius: 4px 70px 4px 4px;
+      background:
+        linear-gradient(0deg, rgba(0,35,105,.15), rgba(0,35,105,.04)),
+        url("https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1100&q=85") center/cover;
+      box-shadow: var(--shadow);
+    }
+    .intro-stamp {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 190px;
+      padding: 23px;
+      background: var(--yellow);
+      color: var(--blue-deep);
+      border-radius: 4px;
+    }
+    .intro-stamp strong { display: block; font-family: var(--heading-font); font-size: 30px; line-height: 1; text-transform: uppercase; }
+    .intro-stamp span { display: block; margin-top: 8px; font-size: 12px; font-weight: 700; }
+    .intro-copy h2 { margin: 15px 0 22px; }
+    .intro-copy p { color: var(--muted); }
+    .check-list { display: grid; grid-template-columns: 1fr 1fr; gap: 13px 20px; margin: 27px 0 32px; padding: 0; list-style: none; }
+    .check-list li { display: flex; gap: 10px; color: var(--blue-deep); font-size: 14px; font-weight: 700; }
+    .check-list li::before { content: "✓"; color: var(--aqua); font-weight: 800; }
+
+    /* Services */
+    .services-head { display: flex; justify-content: space-between; align-items: end; gap: 30px; }
+    .services-head .section-heading { margin-bottom: 38px; }
+    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .service-card {
+      position: relative;
+      min-height: 250px;
+      padding: 30px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      transition: .25s ease;
+    }
+    .service-card:hover { transform: translateY(-6px); border-color: var(--yellow); box-shadow: var(--shadow); }
+    .service-icon {
+      width: 58px; height: 58px; display: grid; place-items: center;
+      margin-bottom: 25px; background: var(--yellow-soft); color: var(--blue);
+      border-radius: 12px 12px 12px 3px;
+    }
+    .service-icon svg { width: 32px; height: 32px; }
+    .service-card h3 { margin-bottom: 12px; font-size: 27px; }
+    .service-card p { margin: 0; color: var(--muted); font-size: 14px; }
+    .service-number { position: absolute; top: 26px; right: 27px; color: #C5CEDB; font-family: var(--heading-font); font-size: 25px; }
+
+    /* Feature band */
+    .feature-band {
+      position: relative;
+      overflow: hidden;
+      background: var(--blue);
+      color: white;
+    }
+    .feature-band::after {
+      content: "";
+      position: absolute;
+      top: -160px; right: -100px;
+      width: 440px; height: 440px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 50%;
+      box-shadow: 0 0 0 45px rgba(255,255,255,.035), 0 0 0 90px rgba(255,255,255,.025);
+    }
+    .feature-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr auto; gap: 35px; align-items: center; }
+    .feature-band h2 { max-width: 700px; color: white; margin: 15px 0; }
+    .feature-band p { max-width: 650px; margin: 0; color: rgba(255,255,255,.78); }
+    .feature-band .eyebrow { color: var(--yellow); }
+
+    /* Process */
+    .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; counter-reset: process; }
+    .process-card { position: relative; padding: 30px 25px; border-top: 3px solid var(--yellow); background: white; box-shadow: 0 8px 30px rgba(7,27,61,.05); }
+    .process-card::before { counter-increment: process; content: "0" counter(process); display: block; margin-bottom: 22px; color: var(--yellow-dark); font-family: var(--heading-font); font-size: 42px; font-weight: 700; }
+    .process-card h3 { margin-bottom: 12px; font-size: 27px; }
+    .process-card p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    /* Coverage */
+    .coverage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .coverage-panel {
+      min-height: 370px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: end;
+      padding: 35px;
+      color: white;
+      background:
+        linear-gradient(0deg, rgba(4,19,48,.92), rgba(4,19,48,.08)),
+        url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1100&q=85") center/cover;
+      border-radius: 4px 50px 4px 4px;
+    }
+    .coverage-panel h3 { color: white; font-size: 36px; }
+    .coverage-copy h2 { margin: 16px 0 20px; }
+    .coverage-copy p { color: var(--muted); }
+    .area-tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 23px; }
+    .area-tags span { padding: 8px 13px; background: var(--light); border: 1px solid var(--border); border-radius: 4px; color: var(--blue); font-size: 13px; font-weight: 700; }
+
+    /* Trust */
+    .trust-grid-large { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .trust-card { padding: 29px; background: white; border: 1px solid var(--border); }
+    .trust-card .trust-symbol { width: 43px; height: 43px; display: grid; place-items: center; margin-bottom: 20px; color: var(--blue); background: var(--yellow-soft); border-radius: 50%; font-size: 20px; }
+    .trust-card h3 { margin-bottom: 11px; font-size: 26px; }
+    .trust-card p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    /* FAQ */
+    .faq-wrap { max-width: 850px; margin: auto; }
+    .faq-wrap .section-heading { text-align: center; margin-left: auto; margin-right: auto; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-question {
+      width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px;
+      padding: 22px 0; border: 0; background: transparent; color: var(--blue-deep);
+      text-align: left; font-weight: 700; cursor: pointer;
+    }
+    .faq-question span:last-child { color: var(--yellow-dark); font-size: 24px; }
+    .faq-answer { display: none; max-width: 740px; padding: 0 35px 20px 0; color: var(--muted); font-size: 14px; }
+    .faq-item.active .faq-answer { display: block; }
+    .faq-item.active .faq-question span:last-child { transform: rotate(45deg); }
+
+    /* Contact */
+    .contact-section { background: var(--blue-deep); color: white; }
+    .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 65px; align-items: start; }
+    .contact-copy h2 { color: white; margin: 16px 0 20px; }
+    .contact-copy p { color: rgba(255,255,255,.72); }
+    .contact-details { display: grid; gap: 18px; margin-top: 34px; }
+    .contact-detail { display: flex; gap: 14px; align-items: center; }
+    .contact-detail-icon { width: 43px; height: 43px; display: grid; place-items: center; flex: 0 0 auto; background: rgba(250,187,7,.14); color: var(--yellow); border-radius: 8px; }
+    .contact-detail small { display: block; color: rgba(255,255,255,.55); font-size: 11px; text-transform: uppercase; letter-spacing: .1em; }
+    .contact-detail strong, .contact-detail a { color: white; font-size: 14px; }
+    .contact-form { padding: 35px; background: white; color: var(--body); border-radius: 5px; }
+    .contact-form h3 { margin-bottom: 8px; font-size: 32px; }
+    .contact-form > p { color: var(--muted); font-size: 13px; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .field { display: grid; gap: 7px; margin-bottom: 15px; }
+    .field.full { grid-column: 1 / -1; }
+    .field label { color: var(--blue-deep); font-size: 12px; font-weight: 700; }
+    .field input, .field textarea, .field select {
+      width: 100%; min-height: 48px; padding: 12px 13px;
+      border: 1px solid var(--border); border-radius: 4px; outline: none;
+      color: var(--blue-deep); background: white; font: 14px var(--body-font);
+    }
+    .field textarea { min-height: 115px; resize: vertical; }
+    .field input:focus, .field textarea:focus, .field select:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(0,51,153,.09); }
+    .form-note { margin: 12px 0 0; color: var(--muted); font-size: 11px; }
+
+    /* Footer */
+    .footer { padding: 65px 0 25px; background: #04132E; color: rgba(255,255,255,.72); }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.1fr; gap: 40px; padding-bottom: 45px; }
+    .footer .brand { color: white; margin-bottom: 20px; }
+    .footer .brand-sub { color: rgba(255,255,255,.5); }
+    .footer h4 { margin-bottom: 18px; color: white; font-family: var(--body-font); font-size: 13px; letter-spacing: .08em; }
+    .footer p, .footer li, .footer a { font-size: 13px; }
+    .footer ul { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+    .footer a:hover { color: var(--yellow); }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.12); font-size: 11px; }
+    .footer-bottom p { margin: 0; }
+
+    /* Mobile sticky CTA */
+    .mobile-cta { display: none; }
+
+    @media (max-width: 1020px) {
+      .nav-links { gap: 16px; }
+      .nav-actions .btn { padding: 10px 12px; }
+      .intro-grid, .coverage-grid { gap: 38px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 800px) {
+      .section { padding: 72px 0; }
+      .topbar-inner { justify-content: center; }
+      .topbar-inner > span { display: none; }
+      .nav-inner { min-height: 72px; }
+      .menu-toggle { display: block; }
+      .nav-links {
+        display: none; position: absolute; top: 72px; left: 0; right: 0;
+        padding: 20px; background: white; border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow); flex-direction: column; align-items: stretch; gap: 0;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 13px 5px; border-bottom: 1px solid var(--border); }
+      .nav-actions .btn { display: none; }
+      .hero { min-height: 620px; }
+      .hero-content { padding: 85px 0; }
+      .hero::before { background:
+        linear-gradient(90deg, rgba(4,19,48,.94), rgba(4,30,75,.70)),
+        url("https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80") center/cover; }
+      .trust-grid { grid-template-columns: 1fr 1fr; }
+      .trust-item:nth-child(2) { border-right: 0; }
+      .trust-item:nth-child(-n+2) { border-bottom: 1px solid rgba(7,27,61,.15); }
+      .intro-grid, .coverage-grid, .contact-grid { grid-template-columns: 1fr; }
+      .intro-visual { min-height: 390px; order: 2; }
+      .intro-copy { order: 1; }
+      .service-grid { grid-template-columns: 1fr 1fr; }
+      .feature-grid { grid-template-columns: 1fr; }
+      .process-grid { grid-template-columns: 1fr; gap: 15px; }
+      .trust-grid-large { grid-template-columns: 1fr; }
+      .contact-grid { gap: 38px; }
+      .mobile-cta {
+        position: fixed; z-index: 1200; left: 0; right: 0; bottom: 0;
+        display: grid; grid-template-columns: 1fr 1fr; gap: 9px;
+        padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+        background: white; box-shadow: 0 -8px 28px rgba(7,27,61,.15);
+      }
+      .mobile-cta .btn { min-height: 48px; padding: 10px 8px; font-size: 13px; }
+      body { padding-bottom: 76px; }
+    }
+    @media (max-width: 560px) {
+      .container { width: min(100% - 30px, var(--container)); }
+      .topbar-contact { gap: 14px; font-size: 11px; }
+      .brand-name { font-size: 17px; }
+      .brand-mark { width: 39px; height: 39px; }
+      h1 { font-size: clamp(3rem, 15vw, 4.4rem); }
+      h2 { font-size: 2.8rem; }
+      .hero { min-height: 590px; }
+      .hero-copy { font-size: 16px; }
+      .hero-actions { display: grid; grid-template-columns: 1fr; }
+      .hero-actions .btn { width: 100%; }
+      .trust-item { min-height: 88px; justify-content: flex-start; padding: 14px 10px; font-size: 12px; }
+      .intro-visual { min-height: 315px; }
+      .intro-photo { right: 35px; bottom: 25px; }
+      .intro-stamp { width: 150px; padding: 17px; }
+      .intro-stamp strong { font-size: 25px; }
+      .check-list { grid-template-columns: 1fr; }
+      .services-head { display: block; }
+      .services-head > .btn { margin: -10px 0 28px; }
+      .service-grid { grid-template-columns: 1fr; }
+      .service-card { min-height: 220px; }
+      .coverage-panel { min-height: 280px; }
+      .form-grid { grid-template-columns: 1fr; gap: 0; }
+      .field.full { grid-column: auto; }
+      .contact-form { padding: 24px 19px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+      .footer-bottom { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Plumbing support for homes and businesses in Dubai</span>
+      <div class="topbar-contact">
+        <a href="tel:+971528417570">Call: +971 52 841 7570</a>
+        <a href="mailto:info@plumbingdubai.ae">info@plumbingdubai.ae</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="Plumbing Dubai home">
+        <span class="brand-mark">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M7 5v10a5 5 0 0 0 5 5h8a5 5 0 0 1 5 5v2" stroke="#003399" stroke-width="3.2" stroke-linecap="round"/>
+            <path d="M4 5h6M22 27h6" stroke="#003399" stroke-width="3.2" stroke-linecap="round"/>
+            <path d="M20 7c0 2.4-3 5.2-3 7.2a3 3 0 0 0 6 0C23 12.2 20 9.4 20 7Z" fill="#003399"/>
+          </svg>
+        </span>
+        <span>
+          <span class="brand-name">PLUMBING DUBAI</span>
+          <span class="brand-sub">PROFESSIONAL PLUMBING SERVICES</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#coverage">Areas</a>
+        <a href="#faq">FAQs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="tel:+971528417570">Call Our Team</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <span class="eyebrow">Plumbing services in Dubai</span>
+          <h1>Reliable plumbing.<br><span>Clear solutions.</span></h1>
+          <p class="hero-copy">
+            From everyday plumbing repairs to leak detection, drainage and installations,
+            get help with your plumbing requirements in Dubai.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-yellow" href="#contact">
+              Request a Service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-outline" href="tel:+971528417570">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 5.2 2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.7l.5 3a2 2 0 0 1-.6 1.8L8.1 11.4a16 16 0 0 0 4.5 4.5l1.9-1.9a2 2 0 0 1 1.8-.6l3 .5a2 2 0 0 1 1.7 2Z"/></svg>
+              +971 52 841 7570
+            </a>
+          </div>
+          <div class="hero-note">
+            <span class="hero-note-mark">24</span>
+            <span>Emergency plumbing assistance is advertised by the service. Contact the team to confirm availability.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Service highlights">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4 6v5c0 5 3.4 8.2 8 10 4.6-1.8 8-5 8-10V6l-8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg>
+          <span>Plumbing service network</span>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V8l8-5 8 5v12"/><path d="M9 20v-6h6v6M2 20h20"/></svg>
+          <span>Residential and commercial</span>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span>Emergency service advertised</span>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5M8 17h3"/></svg>
+          <span>Multiple plumbing solutions</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container intro-grid">
+        <div class="intro-visual">
+          <div class="intro-photo" role="img" aria-label="Professional plumbing work"></div>
+          <div class="intro-stamp">
+            <strong>Flow<br>with confidence</strong>
+            <span>Practical plumbing support for your property</span>
+          </div>
+        </div>
+        <div class="intro-copy">
+          <span class="eyebrow">About Plumbing Dubai</span>
+          <h2>Plumbing problems need practical answers.</h2>
+          <p>
+            Plumbing Dubai presents a service network connecting customers with plumbing
+            companies and technicians for a range of property requirements. The service
+            covers repairs, installations, inspections and specialist plumbing work.
+          </p>
+          <p>
+            Whether you are dealing with a leaking pipe, a drainage concern or a new
+            installation, explain the issue and discuss the next steps with the team.
+          </p>
+          <ul class="check-list">
+            <li>General plumbing repairs</li>
+            <li>Leak detection support</li>
+            <li>Drainage solutions</li>
+            <li>Plumbing installations</li>
+            <li>Water heater services</li>
+            <li>Residential and commercial needs</li>
+          </ul>
+          <a class="btn btn-primary" href="#services">Explore Our Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="services">
+      <div class="container">
+        <div class="services-head">
+          <div class="section-heading">
+            <span class="eyebrow">What we can help with</span>
+            <h2>Plumbing services, organised around your needs.</h2>
+            <p>Find the type of plumbing support you need. Contact the team to discuss the issue, property and service availability.</p>
+          </div>
+          <a class="btn btn-primary" href="#contact">Discuss Your Requirement</a>
+        </div>
+
+        <!-- Service icon group 1: exactly three custom SVG icons -->
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M8 8h12v8H8zM20 12h8a5 5 0 0 1 5 5v4"/>
+                <path d="M29 21h8M33 21v5M8 16v7a5 5 0 0 0 5 5h8"/>
+                <path d="M17 28h8v5h-8z"/>
+                <path d="M10 5v3M18 5v3"/>
+              </svg>
+            </div>
+            <h3>Repairs & Maintenance</h3>
+            <p>Help with leaking taps, faulty fixtures, pipe problems, toilets and general plumbing repairs.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 4S10 17 10 23a10 10 0 0 0 20 0C30 17 20 4 20 4Z"/>
+                <path d="M15 25c1 3 3 4 6 4"/>
+                <circle cx="29" cy="10" r="5"/>
+                <path d="m33 14 4 4"/>
+              </svg>
+            </div>
+            <h3>Leak & Pipe Detection</h3>
+            <p>Discuss suspected water leaks, concealed pipe issues, slab leaks and pipe repair or replacement.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M8 8h24v8H8zM12 16v6a8 8 0 0 0 16 0v-6"/>
+                <path d="M20 22v3M16 29v2M24 29v2"/>
+                <path d="M6 8V5h28v3"/>
+              </svg>
+            </div>
+            <h3>Drainage & Cleaning</h3>
+            <p>Drain cleaning, sewer line concerns and drainage services, including hydro jetting where suitable.</p>
+          </article>
+        </div>
+
+        <!-- Service icon group 2: exactly three custom SVG icons -->
+        <div class="service-grid" style="margin-top:18px">
+          <article class="service-card">
+            <span class="service-number">04</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 6h22v28H9z"/>
+                <path d="M14 11h12v7H14zM14 23h12"/>
+                <path d="M20 18v5M17 28h6"/>
+                <path d="M5 12h4M31 12h4"/>
+              </svg>
+            </div>
+            <h3>Water Heaters</h3>
+            <p>Water heater repair, replacement and installation enquiries for your property.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">05</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6 10h28v23H6z"/>
+                <path d="M10 10V6h20v4M11 16h18M14 21h12"/>
+                <path d="M15 27h10"/>
+                <circle cx="20" cy="27" r="2"/>
+              </svg>
+            </div>
+            <h3>Fixtures & Installation</h3>
+            <p>Support with plumbing fixtures, bathroom fittings, showers, bathtubs and garbage disposals.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">06</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 4 7 10v9c0 8 5.5 13 13 17 7.5-4 13-9 13-17v-9L20 4Z"/>
+                <path d="m14 20 4 4 8-9"/>
+              </svg>
+            </div>
+            <h3>Inspection & Specialist Work</h3>
+            <p>Enquire about plumbing inspections, gas line services and other specialist requirements.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feature-band">
+      <div class="container feature-grid">
+        <div>
+          <span class="eyebrow">Need plumbing assistance?</span>
+          <h2>Explain the problem. Find the right next step.</h2>
+          <p>Share your plumbing concern and property location so the team can discuss the appropriate service and availability.</p>
+        </div>
+        <a class="btn btn-yellow" href="#contact">Request a Service</a>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">A straightforward enquiry</span>
+          <h2>From plumbing concern to service request.</h2>
+          <p>A clear starting point helps the team understand what you need before discussing the service.</p>
+        </div>
+        <div class="process-grid">
+          <article class="process-card">
+            <h3>Tell us what happened</h3>
+            <p>Describe the plumbing issue, the affected area and whether the matter needs urgent attention.</p>
+          </article>
+          <article class="process-card">
+            <h3>Share your location</h3>
+            <p>Provide your area in Dubai and the type of property so service coverage can be checked.</p>
+          </article>
+          <article class="process-card">
+            <h3>Confirm the next step</h3>
+            <p>Discuss the suitable service, availability, expected charges and any arrangements before proceeding.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="coverage">
+      <div class="container coverage-grid">
+        <div class="coverage-panel">
+          <div>
+            <span class="eyebrow" style="color:var(--yellow)">Service location</span>
+            <h3>Dubai, UAE</h3>
+          </div>
+        </div>
+        <div class="coverage-copy">
+          <span class="eyebrow">Where service is requested</span>
+          <h2>Plumbing support across Dubai.</h2>
+          <p>
+            The website lists Dubai neighbourhoods including Barsha Heights, Dubai Marina,
+            Al Barsha, Jumeirah Lakes Towers, The Greens and Arabian Ranches.
+            Contact the team to confirm availability for your exact location.
+          </p>
+          <div class="area-tags">
+            <span>Barsha Heights</span>
+            <span>Dubai Marina</span>
+            <span>Al Barsha</span>
+            <span>JLT</span>
+            <span>The Greens</span>
+            <span>Arabian Ranches</span>
+          </div>
+          <p style="margin-top:18px;font-size:12px">Other Emirates are also mentioned on the existing website. Confirm service coverage directly before arranging a visit.</p>
+          <a class="btn btn-primary" href="#contact">Check Service Availability</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">A better service experience</span>
+          <h2>Clear information at every step.</h2>
+          <p>Choosing a plumbing service should begin with a clear understanding of the work, the location and the arrangements.</p>
+        </div>
+        <div class="trust-grid-large">
+          <article class="trust-card">
+            <div class="trust-symbol">01</div>
+            <h3>Understand the work</h3>
+            <p>Explain the issue and ask which service is appropriate before confirming an appointment.</p>
+          </article>
+          <article class="trust-card">
+            <div class="trust-symbol">02</div>
+            <h3>Confirm the details</h3>
+            <p>Discuss availability, service location, expected costs and any relevant conditions in advance.</p>
+          </article>
+          <article class="trust-card">
+            <div class="trust-symbol">03</div>
+            <h3>Know who is attending</h3>
+            <p>Ask for the attending technician or service provider's details and relevant credentials before work begins.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="faq">
+      <div class="container faq-wrap">
+        <div class="section-heading">
+          <span class="eyebrow">Frequently asked questions</span>
+          <h2>Before you request a plumber.</h2>
+          <p>Some useful points to consider before contacting the service team.</p>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span>What plumbing services can I enquire about?</span><span>+</span></button>
+          <div class="faq-answer">You can enquire about general plumbing repairs, leak detection, pipe repairs, drain cleaning, water heater services, fixture installations, inspections and other plumbing requirements.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span>Does Plumbing Dubai advertise emergency plumbing?</span><span>+</span></button>
+          <div class="faq-answer">The existing website advertises 24-hour emergency plumbing assistance. Contact the team directly to confirm current availability, response arrangements and any applicable charges.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span>Which areas do you cover?</span><span>+</span></button>
+          <div class="faq-answer">The website lists several Dubai neighbourhoods, including Barsha Heights, Dubai Marina, Al Barsha, JLT, The Greens and Arabian Ranches. Confirm coverage for your exact location before booking.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span>How can I request a plumbing service?</span><span>+</span></button>
+          <div class="faq-answer">Call +971 52 841 7570 or use the contact form on this page. Include your location, the type of property and a short description of the issue.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span>Can I confirm the cost before work starts?</span><span>+</span></button>
+          <div class="faq-answer">Contact the team to discuss the issue and request information about inspection fees, labour, materials and any other charges before agreeing to the work.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <span class="eyebrow" style="color:var(--yellow)">Contact Plumbing Dubai</span>
+          <h2>Let's discuss your plumbing requirement.</h2>
+          <p>Tell the team what you need, where the property is located and how they can contact you.</p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span class="contact-detail-icon">☎</span>
+              <div><small>Call the team</small><a href="tel:+971528417570">+971 52 841 7570</a></div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail-icon">✉</span>
+              <div><small>Email</small><a href="mailto:info@plumbingdubai.ae">info@plumbingdubai.ae</a></div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail-icon">⌖</span>
+              <div><small>Listed business address</small><strong>Barsha Heights, Dubai, UAE</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <h3>Request a service</h3>
+          <p>Complete the details below. Your email application will open with the enquiry prepared.</p>
+          <div class="form-grid">
+            <div class="field">
+              <label for="fullName">Full name *</label>
+              <input id="fullName" name="name" type="text" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number *</label>
+              <input id="phone" name="phone" type="tel" placeholder="Your phone number" required>
+            </div>
+            <div class="field">
+              <label for="email">Email address *</label>
+              <input id="email" name="email" type="email" placeholder="Your email" required>
+            </div>
+            <div class="field">
+              <label for="location">Property location *</label>
+              <input id="location" name="location" type="text" placeholder="Area in Dubai" required>
+            </div>
+            <div class="field full">
+              <label for="service">Service required</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option>General plumbing repair</option>
+                <option>Leak detection or pipe repair</option>
+                <option>Drainage or sewer service</option>
+                <option>Water heater service</option>
+                <option>Fixture installation</option>
+                <option>Inspection or specialist service</option>
+                <option>Emergency plumbing enquiry</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">Describe your requirement *</label>
+              <textarea id="message" name="message" placeholder="Tell us about the plumbing issue..." required></textarea>
+            </div>
+          </div>
+          <button class="btn btn-yellow" type="submit" style="width:100%">Prepare My Enquiry</button>
+          <p class="form-note">This demonstration form prepares an email. Connect it to the business's approved form service or CRM before using it on the live website.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#home">
+            <span class="brand-mark">
+              <svg viewBox="0 0 32 32" fill="none"><path d="M7 5v10a5 5 0 0 0 5 5h8a5 5 0 0 1 5 5v2" stroke="#003399" stroke-width="3.2" stroke-linecap="round"/><path d="M4 5h6M22 27h6" stroke="#003399" stroke-width="3.2" stroke-linecap="round"/></svg>
+            </span>
+            <span><span class="brand-name">PLUMBING DUBAI</span><span class="brand-sub">PROFESSIONAL PLUMBING SERVICES</span></span>
+          </a>
+          <p>Plumbing service enquiries for repairs, installations, drainage, leak detection and other property plumbing requirements in Dubai.</p>
+        </div>
+        <div>
+          <h4>QUICK LINKS</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#coverage">Service Areas</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>OUR SERVICES</h4>
+          <ul>
+            <li><a href="#services">Plumbing Repairs</a></li>
+            <li><a href="#services">Leak Detection</a></li>
+            <li><a href="#services">Drain Cleaning</a></li>
+            <li><a href="#services">Water Heaters</a></li>
+            <li><a href="#services">Installations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>GET IN TOUCH</h4>
+          <ul>
+            <li><a href="tel:+971528417570">+971 52 841 7570</a></li>
+            <li><a href="mailto:info@plumbingdubai.ae">info@plumbingdubai.ae</a></li>
+            <li>Barsha Heights, Dubai, UAE</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Plumbing Dubai. All rights reserved.</p>
+        <p>Website concept redesign for presentation purposes.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta" aria-label="Quick contact actions">
+    <a class="btn btn-primary" href="tel:+971528417570">Call Now</a>
+    <a class="btn btn-yellow" href="#contact">Request Service</a>
+  </div>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+      menuToggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    // FAQ accordion
+    document.querySelectorAll(".faq-question").forEach(button => {
+      button.addEventListener("click", () => {
+        const item = button.closest(".faq-item");
+        const isActive = item.classList.contains("active");
+
+        document.querySelectorAll(".faq-item").forEach(other => {
+          other.classList.remove("active");
+          other.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+        });
+
+        if (!isActive) {
+          item.classList.add("active");
+          button.setAttribute("aria-expanded", "true");
+        }
+      });
+    });
+
+    // Demo form: prepare an email for the business.
+    // Replace with a secure backend or approved form integration before launch.
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      if (!this.reportValidity()) return;
+
+      const data = new FormData(this);
+      const subject = encodeURIComponent("Plumbing Service Enquiry - " + data.get("name"));
+      const body = encodeURIComponent(
+        "Name: " + data.get("name") + "\n" +
+        "Phone: " + data.get("phone") + "\n" +
+        "Email: " + data.get("email") + "\n" +
+        "Location: " + data.get("location") + "\n" +
+        "Service: " + (data.get("service") || "Not specified") + "\n\n" +
+        "Message:\n" + data.get("message")
+      );
+
+      window.location.href = "mailto:info@plumbingdubai.ae?subject=" + subject + "&body=" + body;
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
